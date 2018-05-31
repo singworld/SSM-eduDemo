@@ -4,7 +4,6 @@ import com.yuxiu.edu.model.User;
 import com.yuxiu.edu.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
@@ -31,16 +30,16 @@ public class UserController {
 
     @RequestMapping("manage")
     public String manage(){
-        return "User/UserManage";
+        return "user/manage";
     }
 
     @RequestMapping("info")
     public String info(){
-        return "User/UserInfo";
+        return "user/info";
     }
 
     @RequestMapping("edit")
     public String edit(){
-        return "User/UserEdit";
+        return "user/edit";
     }
 }
